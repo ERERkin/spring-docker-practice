@@ -11,6 +11,8 @@ mvn install
 
 docker build -t spring-docker-practice.jar .
 
+docker run -p 9090:8080 spring-docker-practice.jar
+
 ###Push to DockerHub
 docker login
 
