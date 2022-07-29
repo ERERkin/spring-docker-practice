@@ -13,6 +13,8 @@ docker build -t spring-docker-practice.jar .
 
 docker run -p 9090:8080 spring-docker-practice.jar
 
+[//]: # (docker run -d spring-docker-practice.jar)
+
 ###Stop project
 docker container ls 
 
