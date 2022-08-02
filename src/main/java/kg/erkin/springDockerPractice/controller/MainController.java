@@ -1,4 +1,4 @@
-package kg.erkin.springDockerPractice;
+package kg.erkin.springDockerPractice.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
