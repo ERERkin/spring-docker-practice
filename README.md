@@ -22,11 +22,23 @@ docker ps
 
 docker kill (*CONTAINER ID)
 
+docker stop (*CONTAINER ID)
+
 ###Push to DockerHub
 docker login
 
 docker image ls
 
 docker push erkinjavadeveloper/spring-docker-practice.jar
+
+
+###Add Database
+docker run --rm --name postgresql -p 5432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=dockerdb -d postgres:latest
+
+###Git into Database
+docker exec -it postgresql psql -d dockerdb -U postgres
+
+###Start docker compose
+docker-compose up --build
 
 
